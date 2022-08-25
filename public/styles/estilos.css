@@ -1,0 +1,241 @@
+*{padding: 0px;
+margin: 0px;
+box-sizing: border-box;font-family: 'Mulish', sans-serif;
+}
+html {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background: rgb(26, 13, 39);
+    color: #F0A500;
+    
+
+}
+
+
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100px;
+    align-items: center;
+    justify-content:space-between;
+    width: 100vw;
+}
+.logo{
+    display: flex;
+    width: 140px;
+    padding: 0 10px;
+    
+}
+.nav-bar a{
+    
+    flex-wrap: nowrap;
+    text-decoration: none;
+    color: #ffb516ee;
+    justify-content: space-between;
+    letter-spacing: 2px;
+    padding: 0 10px;
+    font-size: 18px;
+}
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    width: 40vw;
+    justify-content: space-between;
+    
+}
+
+.contacto a{
+    padding: 10px 10px;
+    width: 10vw;
+    font-size: 18px;
+    color: #ffb516ee;
+    background-color: rgb(26, 13, 39);
+    margin: 0 20px 0 0;
+}
+.contacto a:hover{
+    background-color: #ffb516ee;
+    color: rgb(26, 13, 39);
+}
+.nav-bar ul li a{
+    padding: 5px;
+}
+.nav-bar ul li a:hover{
+    background-color: #ffb516ee;
+    color: rgb(26, 13, 39);
+}
+.presentacion{
+    background-image: url(../images/fila-libros-de-derecho.jpg);
+    background-size: cover;
+    display: flex;
+    height: 526px;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    flex-direction: column;
+    text-shadow: 0 0 8px rgb(0, 0, 0, 0.9);
+}
+h2 a{
+    text-decoration: none;
+    color: #030303;
+}
+.nombre{
+    padding: 50px;
+    background: rgba(14, 13, 13, 0.7);
+    transition: background, 0.5s,
+                padding, 0.5s;
+}
+.nombre:hover{
+    background: rgba(14, 13, 13, 0.9);
+    padding: 100px;
+}
+.presentacion h1{align-items: center;
+    justify-content: center;}
+.presentacion h2{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.servicios{
+    background-image: url(../images/f9ae1734ee770bc14205d1914da0656e-removebg-preview.png) ;
+    background-repeat: repeat;
+    background-size: 50px;
+    background: linear-gradient(1deg,#573B79,#4E386E,#1A0D27);
+}
+.card-body{
+    background-color: #E2DCC8;
+}
+.formulario{
+    width: 500px;
+    background: #F0A500;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    align-items: center;
+    border-radius: 3px;
+    border: 2px solid #030303;
+}
+.formulario p{
+    padding: 5px;
+}
+.boton{
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #ccc;
+}
+.boton:hover{
+    background: rgb(150, 145, 145);
+}
+
+.field{
+    width: 450px;
+}
+.enviar-datos{
+    background: linear-gradient(1deg,#1A0D27,#4E386E,#573B79)
+}
+.enviar-datos h1{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    color: rgb(5, 5, 5);
+    padding: 15px;
+    margin-top: 40px;
+    border: 2px solid #030303;
+    border-radius: 3px;
+    width: 30vw;
+    background: #F0A500;
+    text-shadow: 3px;
+}
+footer{
+    width: 100vw;
+    height: 90px;
+    box-sizing: border-box;
+}
+.pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: rgb(160, 160, 160);
+    height: 60px;
+}
+.footer-izq{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer-der a{
+    color: rgb(160, 160, 160);
+    padding: 5px;
+    text-decoration: none;
+    box-sizing: content-box;
+}
+.hamburguesa{
+    display: none;
+}
+.submenu{
+    display: none;
+}
+@media (max-width: 768px){
+    .top-left-header{
+        margin-left: 50px;
+    }
+    .contacto{display: none;}
+
+    .navegacion{
+        display: none;
+    }
+    .hamburguesa{
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        position:relative;
+        right: 20px;
+        background: #4E386E;
+        padding: 15px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2px;
+}
+    .submenu{
+        position: absolute;
+        right: 2px;
+        background: #4E386E;
+        padding: 15px,20px;
+        height: 120px;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        visibility: hidden;
+    }
+    .submenu ul li{
+        list-style: none;
+        padding-top: 7px;
+    }
+    .submenu ul li a{
+        text-decoration: none;
+        color: #F0A500;
+        display: block;
+    }
+    .hamburguesa:hover .submenu{
+        visibility: visible;
+
+    }
+    }
+    
+
+
+
+
+
+
